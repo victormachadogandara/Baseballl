@@ -9,8 +9,9 @@ namespace Baseballl
     class equipo
     {
         public string Nombre {get; set;}
-        public string CiudadDeOrigen { get; set; }
+        public string Ciudad { get; set; }
         public string Entrenador { get; set; }
+        public Estadio estadio { get; set; }
 
         public List<jugador> Jugadores { get; set; }
 
@@ -19,7 +20,7 @@ namespace Baseballl
             Jugadores = new List<jugador>();
 
             Nombre = "Equipo Numero";
-            CiudadDeOrigen = "Ciudad Nueva";
+            Ciudad = "Ciudad Nueva";
             Entrenador = "Entrenador Nuevo";
         }
 
@@ -28,7 +29,7 @@ namespace Baseballl
             Jugadores = new List<jugador>();
 
             Nombre = Nombre;
-            CiudadDeOrigen = "Ciudad Nueva";
+            Ciudad = "Ciudad Nueva";
             Entrenador = "Entrenador Nuevo";
 
         }
